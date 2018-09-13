@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+.fondo {
+    background: url('https://album.mediaset.es/cimg/244076/2018/02/27/cabecera-mundialrusia2018-febrero_bffd.jpg');
+    background-position-y: -60px;
+    background-position-x: 200px;
+}
+
+.fondo1 {}
+
+body {
+    background: url('https://i.imgur.com/Yv4lTSF.jpg');
+    background-repeat: no-repeat;
+    background-size: 120%
+}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}

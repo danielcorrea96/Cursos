@@ -1,0 +1,14 @@
+<div class="card-columns f32">
+    <div class="card" *ngFor="let Array of equipo">
+        <img class="card-img-top img-fluid" src='http://diarioam.es/wp-content/uploads/2018/03/Equipos-Rusia-2018.png'>
+        <div class="card-block">
+            <div class="d-flex justify-content-center">
+                <h5 class="card flag {{ Array | banderas }}"></h5>
+            </div>
+            <h5 class="card-title text-center  "> {{ Array }} </h5>
+            <p class="card-text text-center">{{Array.group}}</p>
+            <p class="card-text"><small class="text-muted"></small></p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>

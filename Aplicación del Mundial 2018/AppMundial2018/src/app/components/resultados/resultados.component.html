@@ -1,0 +1,36 @@
+<h1 style="color:white" class="text-center">RESULTADOS - FASE DE GRUPOS</h1>
+<div class="container d-flex justify-content-center fondo1">
+
+    <table class="table table-hover color-keyword:white table-bordered">
+
+        <thead style="color:white">
+
+            <tr class="text-center">
+                <th>GRUPOS</th>
+                <th>CIUDAD</th>
+                <th>ESTADIO</th>
+                <th>FECHA</th>
+                <th>LOCAL</th>
+                <th>RESULTADO</th>
+                <th>VISITANTE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center f32" *ngFor="let Array of i; let i=index" style="color:white">
+                <!-- <h4>{{Array.city}}</h4> -->
+                <th scope="row">{{ Array.group }}</th>
+                <td> {{ Array.city }}</td>
+                <td> {{ Array.stadium.name }} </td>
+                <td> {{ Array.date }}</td>
+                <td>
+                    <li class="flag m-2 {{ Array.team1.name | banderas }}"></li> {{ Array.team1.name }}
+                </td>
+                <td>{{ Array.score1 }} - {{ Array.score2 }}</td>
+                <td>
+                    <li class="flag m-2 {{ Array.team2.name | banderas }}"></li> {{ Array.team2.name }} </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

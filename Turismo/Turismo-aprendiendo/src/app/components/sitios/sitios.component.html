@@ -1,0 +1,8 @@
+<div class="container">
+    <div class="card-rows">
+        <!--  -->
+        <br>
+        <app-sitios-generic (sitioSelecionado)="verSitio( $event )" [santamart]="santamart" [index]="i" *ngFor="let santamart of santamart; let i = index"></app-sitios-generic>
+        <br>
+    </div>
+</div>

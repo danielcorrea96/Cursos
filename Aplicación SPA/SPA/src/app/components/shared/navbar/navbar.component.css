@@ -1,0 +1,8 @@
+.fondo {
+    background: url('36867.jpg');
+    background-position-y: -190px;
+    background-position-x: 200px;
+    padding: 70px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 130%;
+}

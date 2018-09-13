@@ -1,0 +1,16 @@
+<h1 class=" text-center p">PARA REIR UN RATO</h1>
+<hr>
+<div class="card-columns m-5 animated fadeIn">
+
+    <div (click)="verDetalle( Popu.id )" *ngFor="let Popu of PelisPopu" class="card puntero">
+        <img class="card-img-top" src="{{urlImag}}{{Popu.backdrop_path}}" alt="Card image cap ">
+        <div class="card-body ">
+            <h5 class="card-title ">{{Popu.original_title}}</h5>
+
+            <span class="badge" [ngClass]="{  'badge-danger': Popu.vote_average <= 5.9 , 'badge-info': Popu.vote_average <= 6.7 , 'badge-success': Popu.vote_average >= 6.7   }"><i class="fas fa-star color"></i> Valoración: {{ Popu.vote_average }}</span>
+            <br>
+            <!-- <span *ngFor="let artist of item.artists " class="badge badge-info ">{{ artist.name }}</span> -->
+            <small style="font-weight: bold;">Fecha: {{ Popu.release_date }}</small>
+        </div>
+    </div>
+</div>

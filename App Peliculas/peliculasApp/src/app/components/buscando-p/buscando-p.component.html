@@ -1,0 +1,21 @@
+<h1>BUSCANDO: {{ termino.value }}</h1>
+<div class="row">
+    <div class="col">
+        <input #termino type="text" (keyup)="buscar(termino.value)" class="form-control" placeholder="Buscar">
+    </div>
+</div>
+
+<div class="card-columns m-5">
+    <div (click)="verDetalle( peli.id )" *ngFor="let peli of peliculas" class="card puntero">
+        <img class="card-img-top" src="{{urlImag}}{{peli.backdrop_path}}" alt="Card image cap ">
+        <div class="card-body ">
+            <h5 class="card-title ">{{peli.original_title}}</h5>
+
+            <span class="badge" [ngClass]="{  'badge-danger': peli.vote_average <= 5.9 , 'badge-info': peli.vote_average <= 6.7 , 'badge-success': peli.vote_average >= 6.7   }"><i class="fas fa-star color"></i> Valoración: {{ peli.vote_average }}</span>
+            <br>
+            <!-- <span *ngFor="let artist of item.artists " class="badge badge-info ">{{ artist.name }}</span> -->
+            <small style="font-weight: bold;">Fecha: {{ peli.release_date }}</small>
+        </div>
+    </div>
+
+</div>

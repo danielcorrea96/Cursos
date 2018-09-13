@@ -1,0 +1,13 @@
+<br>
+<div class="card m-2 animated fadeIn fast d-flex justify-content-center">
+    <img class="card-img-top img-fluid" [src]="santamart.img" [alt]="santamart.titulo">
+    <div class="card-block">
+        <h5 class="card-title text-center">{{ santamart.titulo }}</h5>
+        <p class="card-text text-center">{{ santamart.descripcion }}</p>
+        <p class="card-text"><small class="text-muted"></small></p>
+        <div class="d-flex justify-content-center">
+            <button (click)=verSitio() type="button" class="btn btn-outline-primary">Ver más...</button>
+        </div>
+        <p class="card-text"><small class="text-muted">Visitaste esto hace un rato...</small></p>
+    </div>
+</div>

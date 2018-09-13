@@ -1,0 +1,17 @@
+<h1 class="text-center">{{ santamart.titulo | uppercase }}</h1>
+<hr>
+<div class="row">
+    <div class="col-md-5 animated fadeIn">
+        <div class="w-50 text-center">
+            <img [src]="santamart.img" [alt]="santamart.titulo" width="200%" height="200%">
+        </div>
+        <br><br>
+        <a [routerLink]="['/sitios']" class="btn btn-outline-danger btn-block d-flex justify-content-center ">Regresar</a>
+    </div>
+    <br>
+    <div class="col-md-6  animated fadeIn">
+        <h3 class="text-center">{{santamart.titulo}}</h3>
+        <hr>
+        <p>{{santamart.descripcion}}</p>
+    </div>
+</div>
